@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'DESKTOP-MAC02AB\\pc',
+	'hostname' => 'DESKTOP-MAC02AB',
 	'username' => 'root',
 	'password' => '123456',
 	'database' => 'employees_crud',

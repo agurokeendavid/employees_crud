@@ -52,6 +52,14 @@
 						<label for="add_contact_no">Contact Number</label>
 						<input id="add_contact_no" name="add_contact_no" type="text" class="form-control">
 					</div>
+					<div class="form-group">
+						<label for="add_photo_image">Photo Image</label>
+						<input type="file" name="add_photo_image" id="add_photo_image" class="form-control-file">
+					</div>
+					<div class="form-group">
+						<label for="add_signature_image">Signature Image</label>
+						<input type="file" name="add_signature_image" id="add_signature_image" class="form-control-file">
+					</div>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>

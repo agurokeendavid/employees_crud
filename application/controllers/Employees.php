@@ -98,6 +98,7 @@ class Employees extends CI_Controller
 						}
 						// Get data about the file
 						$upload_data = $this->upload->data();
+						$employee_data['photo_img'] = file_get_contents($_FILES['edit_photo_image']['tmp_name']);
 						$employee_data['photo_url'] = $upload_data['file_name'];
 					}
 				}
@@ -120,6 +121,7 @@ class Employees extends CI_Controller
 						}
 						// Get data about the file
 						$upload_data = $this->upload->data();
+						$employee_data['signature_img'] = file_get_contents($_FILES['edit_signature_image']['tmp_name']);
 						$employee_data['signature_url'] = $upload_data['file_name'];
 					}
 				}
@@ -159,6 +161,7 @@ class Employees extends CI_Controller
 					}
 					// Get data about the file
 					$upload_data = $this->upload->data();
+					$employee_data['photo_img'] = unpack("H*hex", file_get_contents($photo_image_path . '/' . $upload_data['file_name']));
 					$employee_data['photo_url'] = $upload_data['file_name'];
 				}
 			} else {
@@ -185,6 +188,7 @@ class Employees extends CI_Controller
 					}
 					// Get data about the file
 					$upload_data = $this->upload->data();
+					$employee_data['signature_img'] = unpack("H*hex", file_get_contents($signature_image_path . '/' . $upload_data['file_name']));
 					$employee_data['signature_url'] = $upload_data['file_name'];
 				}
 			} else {
